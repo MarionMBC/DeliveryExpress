@@ -1,0 +1,318 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+.bg-gray {
+    background-color: #dddbdb;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.ff-roboto {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.btn-custom {
+    transition: all .3s ease;
+    border: 1px solid #ee3135;
+}
+
+.bg-custom {
+    background-color: #ee3135;
+}
+
+.bg-custom2 {
+    background-color: ee3135;
+}
+
+.btn-custom:hover {
+    transform: scale(1.05);
+    background-color: #ee3135;
+    color: rgb(255, 255, 255) !important;
+    border: 1px solid white;
+}
+
+.color-link {
+    color: white !important;
+}
+
+.nav-link.color-link:hover {
+    color: #ee3135 !important;
+}
+
+.background-image {
+    background-image: url(../img/wave1.2.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Apply zoom hover to card class*/
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+
+/* Ola */
+
+footer {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../img/wave2.png);
+    background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 0.6;
+    bottom: 0;
+    animation: wave1 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: wave_02 5s linear infinite;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: wave1 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: wave1 3s linear infinite;
+}
+
+@keyframes wave1 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes wave_02 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+/**/
+
+
+.button2 {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 30px 61px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin: 25px;
+    font-family: "Roboto", sans-serif;
+    filter: hue-rotate(0deg);
+    border: 2px solid #ff9603;
+    transition: all 0.1s linear;
+}
+
+.button2:hover {
+    border: 1px solid transparent;
+}
+
+.button2:hover span {
+    position: absolute;
+    display: block;
+}
+
+.button2:hover span:nth-child(1) {
+    filter: hue-rotate(0deg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #3a86ff);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.button2:hover span:nth-child(2) {
+    filter: hue-rotate(60deg);
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #3a86ff);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.button2:hover span:nth-child(3) {
+    filter: hue-rotate(120deg);
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(270deg, transparent, #3a86ff);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+        height: 3px;
+    }
+    50%, 100% {
+        height: 2px;
+        right: 100%;
+    }
+}
+
+.button2:hover span:nth-child(4) {
+    filter: hue-rotate(300deg);
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #3a86ff);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+
+/**/
+.button-block {
+    width: 600px;
+}
+
+.social {
+    display: inline-block;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.social a {
+    display: block;
+    background: black;
+    padding: 20px;
+    position: relative;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+.social a::before {
+    dislpay: block;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: -20px;
+    top: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.social a::after {
+    dislpay: block;
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    transform: rotate(0deg) skewX(-45deg);
+    background: rgba(0, 0, 0, 0.7);
+    transform: rotate(45deg) scewY(-45deg);
+}
+
+.social a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 30px rgba(0, 0, 0, 0.5);
+}
+
+.social a i {
+    color: white;
+    font-size: 30pt;
+}
+
+@media (max-width: 768px) {
+    .redes {
+        display: none !important;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .navI1 {
+        display: none !important;
+    }
+}
+
+.dropdown-item:hover {
+    background-color: #B200FF !important;
+    /*Effect*/
+}
+
+.dropdown-toggle:hover {
+    color: #B200FF !important;
+}
