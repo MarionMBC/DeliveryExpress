@@ -19,12 +19,13 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/375ce25381.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <title>Delivery Express</title>
 </head>
 
 <body class="bg-gray">
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-blue p-3">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="img/logoNav.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -48,10 +49,14 @@
                         Redes sociales
                     </a>
                     <ul class="dropdown-menu bg-custom2" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item text-light" href="https://www.facebook.com/SmartMarket-105036392025665/">Facebook</a></li>
-                        <li><a class="dropdown-item text-light" href="https://twitter.com/SmartMarketHn">Twitter</a></li>
-                        <li><a class="dropdown-item text-light" href="https://www.instagram.com/__smartmarket__/">Instagram</a></li>
-                        <li><a class="dropdown-item text-light" href="https://www.youtube.com/channel/UCLIBZHe3GFknl-S9F4lBGvA">Youtube</a></li>
+                        <li><a class="dropdown-item text-light"
+                               href="https://www.facebook.com/SmartMarket-105036392025665/">Facebook</a></li>
+                        <li><a class="dropdown-item text-light" href="https://twitter.com/SmartMarketHn">Twitter</a>
+                        </li>
+                        <li><a class="dropdown-item text-light" href="https://www.instagram.com/__smartmarket__/">Instagram</a>
+                        </li>
+                        <li><a class="dropdown-item text-light"
+                               href="https://www.youtube.com/channel/UCLIBZHe3GFknl-S9F4lBGvA">Youtube</a></li>
                     </ul>
                 </li>
             </ul>
@@ -59,20 +64,47 @@
     </div>
 </nav>
 
-<div class="container-fluid background-image mt-0">
+<div class="container-fluid background-image mt-0 mb-0">
     <div class="row">
-        <div class="col-12 col-md-6 text-light align-self-center pl-2 pt-3 pt-md-0">
+        <div class="mx-3 col-12 col-md-6 text-dark align-self-center pl-2 pt-3 pt-md-0">
             <h1 class="display-md-2 fw-bold ff-roboto">Delivery Express</h1>
-            <h5 class="my-2 text-wrap">
-                <p class="text-wrap">Somos una empresa de delivery que se encarga de llevar tus productos a cualquier lugar.</p>
+            <h5 class="my-2 text-wrap mb-5">
+                <p class="text-wrap">Somos una empresa de delivery que se encarga de llevar tus productos a cualquier
+                    lugar.</p>
             </h5>
-            <div class="button2">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Registrate
-            </div>
+<!--            <div class="button2 m-0">-->
+<!--                <span></span>-->
+<!--                <span></span>-->
+<!--                <span></span>-->
+<!--                <span></span>-->
+<!--                Registrate-->
+<!--            </div>-->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                    <filter id="gooey">
+                        <!-- in="sourceGraphic" -->
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic" />
+                        <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+
+            <button id="gooey-button">
+                Contáctanos
+                <span class="bubbles">
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+            <span class="bubble"></span>
+        </span>
+            </button>
         </div>
         <div class="col-12 col-md-5">
             <div id="scene">
@@ -82,7 +114,29 @@
         </div>
     </div>
 </div>
-<div class="container mt-4">
+
+<section class="mission-vision">
+        <div class="d-flex align-items-center">
+            <img class="img-responsive w-50" src="img/Mission.png" alt="">
+           <div>
+               <h3 class="fw-bold">Misión</h3>
+               <p class="text-justify">
+                   Delivery Express implementa metodologías tecnológicas y eficientes de entrega. Alcanzamos la excelencia con nuestro personal altamente calificado. Proporcionando a nuestros clientes ventajas competitivas y valor sostenido. Nos guiamos por nuestros principios y valores de Integridad, Liderazgo, Excelencia Seguridad, y profesionalismo, fortaleciendo la economía y desarrollando lazos de confianza.               </p>
+           </div>
+        </div>
+    <div class="ms-4 d-flex align-items-center">
+        <div>
+            <h3 class="fw-bold">Visión</h3>
+            <p class="text-justify">
+                Ser el supermercado virtual de preferencia por nuestros clientes, con medidas de compromiso, responsabilidad e integridad, que nos permitan brindar servicios y productos de calidad con métodos innovadores que pretendan afianzarnos con nuestros clientes a través del mercado digital, con un sistema de entregas y distribuidores a nivel nacional, llevándonos a ser el mejor supermercado inteligente en el país.
+            </p>
+        </div>
+        <img class="img-responsive w-50" src="img/vision.png" alt="">
+    </div>
+
+</section>
+
+<!--<div class="container mt-4 w-75">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -109,42 +163,114 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-</div>
+</div>-->
 
 <div class="container mt-4">
-    <div class="row">
-        <div class="col-12">
-            <div class="card shadow rounded">
-                <div class="card-header bg-custom2">
-                    <h5 class="card-title text-dark m-0 fw-bold">¿Cómo funciona?</h5>
-                </div>
-                <div class="card-body">
-                    <ul>
 
-                        <li class="text-dark">Registrate en nuestra plataforma</li>
-                        <li class="text-dark">Registra tu paquete</li>
-                        <li class="text-dark">Elige el tipo de envío</li>
-                        <li class="text-dark">Elige el tipo de pago</li>
-                        <li class="text-dark">Recibe tu paquete</li>
-                    </ul>
-                    <p>Los pedidos se entregan en un plazo de tiempo de 2 a 3 días desde que se recibe la orden en el almacén.
-                        Nuestro equipo de distribución de órdenes se encargará de entregar los productos.
-                    </p>
+    <div class="section">
+        <div class="row">
+            <div class="col align-items-center text-center m-2">
+                <div id="tittle"><h1 class="fw-bold">¿Cómo funciona?</h1></div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-3 col-lg-2 icon-hover">
+                <div>
+                    <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-solid fa-address-card fa-6x bg-icon"></i>
+                        <p class="">Registráte en nuestra plataforma</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 icon-hover">
+                <div>
+                    <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-solid fa-box-open fa-6x bg-icon"></i>
+                        <p class="">Registrá tu paquete</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 icon-hover">
+                <div>
+                    <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-solid fa-paper-plane fa-6x bg-icon"></i>
+                        <p class="">Elegí el tipo de envío</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 icon-hover">
+                <div>
+                    <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-solid fa-credit-card fa-6x bg-icon"></i>
+                        <p class="">Elegí el tipo de pago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2 icon-hover">
+                <div>
+                    <div class="card-body text-center d-flex flex-column align-items-center justify-content-center">
+                        <i class="fas fa-solid fa-check fa-6x bg-icon"></i>
+                        <p class="">Recibí tu paquete</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="shadow p-3 text-center mb-5">
+            <div class="row">
+                <div class="col">
+                    <h6 class="font-color-1 fw-bold">Los pedidos se entregan en un plazo de tiempo de 2 a 3 días desde que se recibe la
+                        orden en el almacén. Nuestro equipo de distribución de órdenes se encargará de entregar los
+                        productos.</h6>
+                </div>
+            </div>
+            <div class="line"></div>
+    </div>
 </div>
 
-<footer class="mt-2">
-    <div class="container redes d-flex justify-content-center">
-        <div class="button-block mb-5">
-            <div class="social"><a target="_blank" href="https://www.facebook.com/SmartMarket-105036392025665/"> <i class="fab fa-facebook"></i></a></div>
-            <div class="social"><a target="_blank" href="https://twitter.com/SmartMarketHn"> <i class="fab fa-twitter"></i></a></div>
-            <div class="social"><a target="_blank" href="https://www.instagram.com/__smartmarket__/"> <i class="fab fa-instagram"></i></a></div>
-            <div class="social"><a target="_blank" href="https://www.youtube.com/channel/UCLIBZHe3GFknl-S9F4lBGvA"> <i class="fab fa-youtube"></i></a></div>
-        </div>
-    </div>
+
+<div class="d-flex">
+
+</div>
+
+
+<div class="flex justify-content-center text-center redes">
+
+    <ul class="wrapper">
+        <li class="icon facebook" onclick="facebook()">
+            <span class="tooltip">Facebook</span>
+            <span><i class="fab fa-facebook-f"></i></span>
+        </li>
+        <li class="icon twitter" onclick="twitter()">
+            <span class="tooltip">Twitter</span>
+            <span><i class="fab fa-twitter"></i></span>
+        </li>
+        <li class="icon instagram" onclick="instagram()">
+            <span class="tooltip">Instagram</span>
+            <span><i class="fab fa-instagram"></i></span>
+        </li>
+        <li class="icon youtube" onclick="youtube()">
+            <span class="tooltip">Youtube</span>
+            <span><i class="fab fa-youtube"></i></span>
+        </li>
+    </ul>
+</div>
+
+<footer id="footer-main" class="mt-2">
+<!--    <div class="container redes d-flex justify-content-center">-->
+<!--        <div class="button-block mb-5">-->
+<!--            <div class="social"><a target="_blank" href="https://www.facebook.com/SmartMarket-105036392025665/"> <i-->
+<!--                    class="fab fa-facebook"></i></a></div>-->
+<!--            <div class="social"><a target="_blank" href="https://twitter.com/SmartMarketHn"> <i-->
+<!--                    class="fab fa-twitter"></i></a></div>-->
+<!--            <div class="social"><a target="_blank" href="https://www.instagram.com/__smartmarket__/"> <i-->
+<!--                    class="fab fa-instagram"></i></a></div>-->
+<!--            <div class="social"><a target="_blank" href="https://www.youtube.com/channel/UCLIBZHe3GFknl-S9F4lBGvA"> <i-->
+<!--                    class="fab fa-youtube"></i></a></div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
     <div class="container mb-0 mt-3">
         <div class="waves">
             <div class="wave" id="wave1"></div>
