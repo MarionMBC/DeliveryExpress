@@ -35,38 +35,16 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link color-link" aria-current="page" href="#">Iniciar sesión</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link color-link" href="#">Registrarse</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link color-link" href="#" tabindex="-1" aria-disabled="true">Trabaja con nosotros</a>
-                </li>
-                <li class="nav-item dropdown navI1">
-                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                        Redes sociales
-                    </a>
-                    <ul class="dropdown-menu bg-custom2" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item text-light"
-                               href="https://www.facebook.com/SmartMarket-105036392025665/">Facebook</a></li>
-                        <li><a class="dropdown-item text-light" href="https://twitter.com/SmartMarketHn">Twitter</a>
-                        </li>
-                        <li><a class="dropdown-item text-light" href="https://www.instagram.com/__smartmarket__/">Instagram</a>
-                        </li>
-                        <li><a class="dropdown-item text-light"
-                               href="https://www.youtube.com/channel/UCLIBZHe3GFknl-S9F4lBGvA">Youtube</a></li>
-                    </ul>
-                </li>
+            <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0" id="nav-acciones">
+
             </ul>
         </div>
     </div>
 </nav>
 
+<div class="m-0 p-0" id="sec-1">
 <div class="container-fluid background-image mt-0 mb-0">
+
     <div class="row">
         <div class="mx-3 col-12 col-md-6 text-dark align-self-center pl-2 pt-3 pt-md-0">
             <h1 class="display-md-2 fw-bold ff-roboto">Delivery Express</h1>
@@ -74,13 +52,6 @@
                 <p class="text-wrap">Somos una empresa de delivery que se encarga de llevar tus productos a cualquier
                     lugar.</p>
             </h5>
-<!--            <div class="button2 m-0">-->
-<!--                <span></span>-->
-<!--                <span></span>-->
-<!--                <span></span>-->
-<!--                <span></span>-->
-<!--                Registrate-->
-<!--            </div>-->
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                 <defs>
                     <filter id="gooey">
@@ -92,8 +63,8 @@
                 </defs>
             </svg>
 
-            <button id="gooey-button">
-                Contáctanos
+            <button id="gooey-button" data-bs-toggle="modal" data-bs-target="#sesionar">
+                Iniciar Sesion
                 <span class="bubbles">
             <span class="bubble"></span>
             <span class="bubble"></span>
@@ -116,71 +87,34 @@
         </div>
     </div>
 </div>
-
-<form action="https://send.pageclip.co/d8v06JLBfOplfm8yUyLtOP7BdwCm2s6N/Contacto" class="pageclip-form" method="post">
-    <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-
-    <!-- It looks like you are creating a contact form. These email and subject fields are special -->
-    <!-- See https://pageclip.co/docs#special-fields for more info -->
-    <input type="email" name="email" value="roscoe@example.com" />
-    <input type="text" name="subject" value="A contact subject" />
-
-    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-    <button type="submit" class="pageclip-form__submit">
-        <span>Send</span>
-    </button>
-</form>
-
 <section class="mission-vision">
-        <div class="d-flex align-items-center">
-            <img class="img-responsive w-50" src="img/Mission.png" alt="">
-           <div>
-               <h3 class="fw-bold">Misión</h3>
-               <p class="text-justify">
-                   Delivery Express implementa metodologías tecnológicas y eficientes de entrega. Alcanzamos la excelencia con nuestro personal altamente calificado. Proporcionando a nuestros clientes ventajas competitivas y valor sostenido. Nos guiamos por nuestros principios y valores de Integridad, Liderazgo, Excelencia Seguridad, y profesionalismo, fortaleciendo la economía y desarrollando lazos de confianza.               </p>
-           </div>
+    <div class="row align-items-center justify-content-center text-center">
+        <div class="col-sm-12 col-lg-6">
+            <h3 class="fw-bold mt-2">Misión</h3>
+            <p class="text-justify mx-3">
+                Delivery Express implementa metodologías tecnológicas y eficientes de entrega.
+                Alcanzamos la excelencia con nuestro personal altamente calificado.
+                Proporcionando a nuestros clientes ventajas competitivas y valor sostenido.
+                Nos guiamos por nuestros principios y valores de Integridad, Liderazgo, Excelencia Seguridad, y profesionalismo, fortaleciendo la economía y desarrollando lazos de confianza.
+            </p>
         </div>
-    <div class="ms-4 d-flex align-items-center">
-        <div>
+        <div class="col-sm-12 col-lg-6">
+            <img class="img-responsive w-75" src="img/Mission.png" alt="">
+        </div>
+    </div>
+    <div class="row align-items-center justify-content-center text-center">
+        <div class="col-sm-12 col-lg-6">
+            <img class="img-responsive w-75" src="img/vision.png" alt="">
+        </div>
+        <div class="col-sm-12 col-lg-6">
             <h3 class="fw-bold">Visión</h3>
-            <p class="text-justify">
+            <p class="text-justify mx-3">
                 Ser el supermercado virtual de preferencia por nuestros clientes, con medidas de compromiso, responsabilidad e integridad, que nos permitan brindar servicios y productos de calidad con métodos innovadores que pretendan afianzarnos con nuestros clientes a través del mercado digital, con un sistema de entregas y distribuidores a nivel nacional, llevándonos a ser el mejor supermercado inteligente en el país.
             </p>
         </div>
-        <img class="img-responsive w-50" src="img/vision.png" alt="">
     </div>
 
 </section>
-
-<!--<div class="container mt-4 w-75">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-        </div>
-        <div class="carousel-inner rounded-1 shadow">
-            <div class="carousel-item active">
-                <img src="img/3.svg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/4.svg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>-->
-
 <div class="container mt-4">
 
     <div class="section">
@@ -243,13 +177,83 @@
             <div class="line"></div>
     </div>
 </div>
+<!-- Modal -->
+</div>
+<div id="sec-2">
+    <nav class="navbar fixed-bottom bg-dark text-light" id="footer-contacto-información">
+        <div class="container-fluid">
+            <div class="d-flex flex-column mx-auto text-center justify-content-center">
+                    <div>Sobre nosotros</div>
+                    <div>
+                        <a href="https://www.facebook.com/DeliveryExpress-100110000000000" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/deliveryexpress/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/deliveryexpress/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
 
-
-<div class="d-flex">
-
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="modal fade" id="registrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Registro</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Dirección de Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca comparirémos tu e-mail con alguien más.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Mantener mi sesión activa</label>
+                    </div>
+                    <div class="btn btn-primary" data-bs-dismiss="modal" onclick="iniciarSesion()">Registrarse</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="sesionar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Inicio de sesión</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Dirección de Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Mantener mi sesión activa</label>
+                    </div>
+                    <div class="btn btn-primary" data-bs-dismiss="modal" onclick="iniciarSesion()">Iniciar Sesión</div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 
+
+
+<!-- Footer -->
 <div class="flex justify-content-center text-center redes">
 
     <ul class="wrapper">
@@ -271,24 +275,7 @@
         </li>
     </ul>
 </div>
-
 <footer id="footer-main" class="mt-2">
-<!--    <div class="container redes d-flex justify-content-center">-->
-<!--        <div class="button-block mb-5">-->
-<!--            <div class="social"><a target="_blank" href="https://www.facebook.com/SmartMarket-105036392025665/"> <i-->
-<!--                    class="fab fa-facebook"></i></a></div>-->
-<!--            <div class="social"><a target="_blank" href="https://twitter.com/SmartMarketHn"> <i-->
-<!--                    class="fab fa-twitter"></i></a></div>-->
-<!--            <div class="social"><a target="_blank" href="https://www.instagram.com/__smartmarket__/"> <i-->
-<!--                    class="fab fa-instagram"></i></a></div>-->
-<!--            <div class="social"><a target="_blank" href="https://www.youtube.com/channel/UCLIBZHe3GFknl-S9F4lBGvA"> <i-->
-<!--                    class="fab fa-youtube"></i></a></div>-->
-<!--        </div>-->
-<!--    </div>-->
-
-
-
-
     <div class="container mb-0 mt-3">
         <div class="waves">
             <div class="wave" id="wave1"></div>

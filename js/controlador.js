@@ -4,6 +4,7 @@ var parallaxInstance = new Parallax(scene);
 console.log(parallaxInstance);
 console.log("Parallax listo.");
 
+
 function facebook () {
     window.open("https://www.facebook.com/profile.php?id=100070947710040","_blank");
 }
@@ -18,4 +19,80 @@ function twitter () {
 
 function youtube () {
     window.open("https://www.youtube.com/","_blank");
+}
+
+
+function registrar () {
+
+}
+
+
+function iniciarSesion () {
+    sesionIniciada();
+    document.getElementById("sec-1").style.display = "none";
+    document.getElementById("footer-main").style.display = "none";
+    document.getElementById("nav-acciones").innerHTML = `<li class="nav-item" id="cierre-sesion">
+                    <a class="nav-link color-link" aria-current="page" onclick="cargarAcciones()">Cerrar Sesión</a>
+                </li>
+           
+                <li class="nav-item">
+                    <a class="nav-link color-link" href="#" tabindex="-1" aria-disabled="true">Trabaja con nosotros</a>
+                </li>
+                <li class="nav-item dropdown navI1">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Redes sociales
+                    </a>
+                    <ul class="dropdown-menu bg-custom2" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-light"
+                               href="https://www.facebook.com/SmartMarket-105036392025665/">Facebook</a></li>
+                        <li><a class="dropdown-item text-light" href="https://twitter.com/SmartMarketHn">Twitter</a>
+                        </li>
+                        <li><a class="dropdown-item text-light" href="https://www.instagram.com/__smartmarket__/">Instagram</a>
+                        </li>
+                        <li><a class="dropdown-item text-light"
+                               href="https://www.youtube.com/channel/UCLIBZHe3GFknl-S9F4lBGvA">Youtube</a></li>
+                    </ul>
+                </li>`
+
+
+}
+
+
+function cargarAcciones () {
+    document.getElementById("sec-2").style.display = "block";
+    document.getElementById("nav-acciones").innerHTML = `
+    <li class="nav-item" id="inicio-sesion">
+                    <a class="nav-link color-link" data-bs-toggle="modal" data-bs-target="#sesionar">Iniciar sesión</a>
+                </li>
+                <li class="nav-item" id="registro">
+                    <a class="nav-link color-link" data-bs-toggle="modal" data-bs-target="#registrar">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link color-link" href="#" tabindex="-1" aria-disabled="true">Trabaja con nosotros</a>
+                </li>
+                <li class="nav-item dropdown navI1">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Redes sociales
+                    </a>
+                    <ul class="dropdown-menu bg-custom2" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item text-light"
+                               href="https://www.facebook.com/SmartMarket-105036392025665/">Facebook</a></li>
+                        <li><a class="dropdown-item text-light" href="https://twitter.com/SmartMarketHn">Twitter</a>
+                        </li>
+                        <li><a class="dropdown-item text-light" href="https://www.instagram.com/__smartmarket__/">Instagram</a>
+                        </li>
+                        <li><a class="dropdown-item text-light"
+                               href="https://www.youtube.com/channel/UCLIBZHe3GFknl-S9F4lBGvA">Youtube</a></li>
+                    </ul>
+                </li>`
+
+}
+
+cargarAcciones();
+
+
+function sesionIniciada () {
+    document.getElementById("sec-2").style.display = "block";
 }
