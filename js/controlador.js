@@ -28,9 +28,9 @@ function registrar () {
 
 
 function iniciarSesion () {
-    sesionIniciada();
     document.getElementById("sec-1").style.display = "none";
     document.getElementById("footer-main").style.display = "none";
+    sesionIniciada();
     document.getElementById("nav-acciones").innerHTML = `<li class="nav-item" id="cierre-sesion">
                     <a class="nav-link color-link" aria-current="page" onclick="cargarAcciones()">Cerrar Sesión</a>
                 </li>
@@ -54,13 +54,12 @@ function iniciarSesion () {
                                href="https://www.youtube.com/channel/UCLIBZHe3GFknl-S9F4lBGvA">Youtube</a></li>
                     </ul>
                 </li>`
-
-
 }
 
 
 function cargarAcciones () {
-    document.getElementById("sec-2").style.display = "block";
+    document.getElementById("sec-2").style.display = "none";
+    document.getElementById("sec-1").style.display = "block";
     document.getElementById("nav-acciones").innerHTML = `
     <li class="nav-item" id="inicio-sesion">
                     <a class="nav-link color-link" data-bs-toggle="modal" data-bs-target="#sesionar">Iniciar sesión</a>
@@ -90,9 +89,24 @@ function cargarAcciones () {
 
 }
 
+function sesionIniciada () {
+    document.getElementById("sec-2").style.display = "block";
+}
+
 cargarAcciones();
 
 
-function sesionIniciada () {
-    document.getElementById("sec-2").style.display = "block";
+function chat () {
+    document.getElementById("chat").innerHTML = `<div id="messenger"></div>`
+        const weavy = new Weavy({
+        url: "https://mariondev.weavy.io",
+        tokenFactory: async (refresh) => "wyu_QWh2Ln5Rsz1GFnPlVuRvgRVBd55Ee10tfMW0",
+    });
+
+        const messenger = weavy.app({
+        uid: "messenger-demo",
+        type: "messenger",
+        container: "#messenger",
+    });
+
 }

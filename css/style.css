@@ -2,7 +2,13 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.mission-vision {
+    max-width: 100%;
+}
 
+.m-v-sec {
+    max-width: 100%;
+}
 
 .bg-blue {
     background-color: black;
@@ -23,7 +29,7 @@
 }
 
 .bg-gray {
-    background-color: #dddbdb;
+    background-color: #edded7;
 }
 
 .fw-300 {
@@ -52,7 +58,7 @@
 }
 
 .bg-custom2 {
-    background-color: ee3135;
+    background-color: #ee3135;
 }
 
 .btn-custom:hover {
@@ -425,6 +431,13 @@ footer {
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .chat:hover,
+.wrapper .chat:hover .tooltip,
+.wrapper .chat:hover .tooltip::before {
+    background: #ee8c2a;
+    color: #ffffff;
 }
 
 .wrapper .facebook:hover,
@@ -834,4 +847,25 @@ svg {
         transform: translate(0, 0);
         opacity: 0;
     }
+}
+
+.principal {
+    background-size: cover;
+    background: url("/img/wave2.3.png") no-repeat;
+    background-position: center;
+}
+
+/*Chat messenger*/
+#messenger {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 999;
 }
