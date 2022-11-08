@@ -96,17 +96,17 @@ function sesionIniciada () {
 cargarAcciones();
 
 
-function chat () {
-    document.getElementById("chat").innerHTML = `<div id="messenger"></div>`
-        const weavy = new Weavy({
-        url: "https://mariondev.weavy.io",
-        tokenFactory: async (refresh) => "wyu_QWh2Ln5Rsz1GFnPlVuRvgRVBd55Ee10tfMW0",
-    });
-
-        const messenger = weavy.app({
-        uid: "messenger-demo",
-        type: "messenger",
-        container: "#messenger",
-    });
-
-}
+// function chat () {
+//     document.getElementById("chat").innerHTML = `<div id="messenger"></div>`
+//         const weavy = new Weavy({
+//         url: "https://mariondev.weavy.io",
+//         tokenFactory: async (refresh) => "wyu_QWh2Ln5Rsz1GFnPlVuRvgRVBd55Ee10tfMW0",
+//     });
+//
+//         const messenger = weavy.app({
+//         uid: "messenger-demo",
+//         type: "messenger",
+//         container: "#messenger",
+//     });
+//
+// }
