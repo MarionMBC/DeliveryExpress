@@ -870,3 +870,44 @@ svg {
     z-index: 999;
 }
 
+/*.wave-card {*/
+/*    background: url("/img/wave-card.png") no-repeat;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+.text-bubble1 {
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    transform: translate(-10%, -50%);
+}
+
+
+.text-bubble {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+}
+
+.image-land {
+    background-image: url("/img/Landing.png");
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    width: 100%;
+}
+
+/*Black color transparent over image*/
+.image-land::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+
+

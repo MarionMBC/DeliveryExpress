@@ -29,7 +29,6 @@ function registrar () {
 
 function iniciarSesion () {
     document.getElementById("sec-1").style.display = "none";
-    document.getElementById("footer-main").style.display = "none";
     sesionIniciada();
     document.getElementById("nav-acciones").innerHTML = `<li class="nav-item" id="cierre-sesion">
                     <a class="nav-link color-link" aria-current="page" onclick="cargarAcciones()">Cerrar Sesión</a>
@@ -58,8 +57,8 @@ function iniciarSesion () {
 
 
 function cargarAcciones () {
-    document.getElementById("sec-2").style.display = "none";
-    document.getElementById("sec-1").style.display = "block";
+    document.getElementById("sec-2").style.display = "block";
+    document.getElementById("sec-1").style.display = "none";
     document.getElementById("nav-acciones").innerHTML = `
     <li class="nav-item" id="inicio-sesion">
                     <a class="nav-link color-link" data-bs-toggle="modal" data-bs-target="#sesionar">Iniciar sesión</a>
@@ -98,7 +97,7 @@ cargarAcciones();
 mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaW9ubWJjIiwiYSI6ImNsYTdvazZyeDAyMnUzcHAydnVnM2c4cXAifQ.7ZvWxaq47EkfPY-LUOA7zw';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/satellite-streets-v11',
+    style: 'mapbox://styles/mapbox/streets-v11',
     center: [-87.1857, 14.0656],
     zoom: 14,
 });
@@ -205,20 +204,3 @@ map.on('load', () => {
 
 
 
-/*14.100750029078071, -87.19155521604904*/
-
-
-// function chat () {
-//     document.getElementById("chat").innerHTML = `<div id="messenger"></div>`
-//         const weavy = new Weavy({
-//         url: "https://mariondev.weavy.io",
-//         tokenFactory: async (refresh) => "wyu_QWh2Ln5Rsz1GFnPlVuRvgRVBd55Ee10tfMW0",
-//     });
-//
-//         const messenger = weavy.app({
-//         uid: "messenger-demo",
-//         type: "messenger",
-//         container: "#messenger",
-//     });
-//
-// }
