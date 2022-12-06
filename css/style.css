@@ -74,6 +74,7 @@
 
 .nav-link.color-link:hover {
     color: #ee3135 !important;
+    cursor: pointer;
 }
 
 .background-image {
@@ -890,16 +891,7 @@ svg {
     transform: translate(-10%, -50%);
 }
 
-.image-land {
-    background-image: url("/img/Landing.png");
-    background-size: cover;
-    background-position: center;
-    height: 45vh;
-    width: 100%;
-}
-
-/*Black color transparent over image*/
-.image-land::before {
+.text-sec2::before {
     content: "";
     position: absolute;
     top: 0;
@@ -907,7 +899,59 @@ svg {
     width: 100%;
     background: rgba(0, 0, 0, 0.2);
     height: 100%;
+
+}
+
+.text-sec2 {
+    position: relative;
+    background: url("/img/wave-card.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card-animated {
+    position: relative;
+    background: url("/img/circle-scatter-haikei1.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card-animated::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-animated .text-light {
+    color: #fff;
+    z-index: 1;
+}
+
+.card-animated .card-body form {
+    position: relative;
+    color: white;
 }
 
 
+
+.img-bg {
+    background: url("/img/portrait-happy-delivery-man-carrying-packages-looking-camera-while-standing-street.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card-animated-1 {
+    /*Background transparent*/
+    background: rgba(0, 0, 0, 0.5);
+    color : #fff;
+}
 
